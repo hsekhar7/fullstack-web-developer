@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Hotel</title>
+        <!-- CSS only -->
+        <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="container-fluid">
+        <!-- Header and Navbar -->
+        <header class="main-header" id="home">
+            <nav id="nav" class="navbar navbar-dark  navbar-expand-sm  fixed-top ">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <i class="fa fa-seedling">Travelling</i>
+                    </a>
+                    <button class="navbar-toggler">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="navbar-nav m-lg-auto pt-2">
+                            <li class="navbar-item px-2">
+                                <a class="nav-link" href="#home">Home</a>
+                            </li>
+                            <li class="navbar-item px-2">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="navbar-item px-2">
+                                <a class="nav-link" href="#destination">Destination</a>
+                            </li>
+                            <li class="navbar-item px-2">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            <li class="navbar-item px-2">
+                                <a class="nav-link" href="#book">
+                                    <button class="btn btn-danger">Book Now</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Landing page -->
+            <div class="landing-div">
+                <div class="landing-container d-flex flex-column justify-content-center align-items-center text-center h-100">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2500">
+                                <h1>Enjoy Ultimate Vacations<br>With Us</h1>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2500">
+                                <h1>Make Tours Amazing <br>With Us</h1>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2500">
+                                <h1>Make Tours Amazing <br>With Us</h1>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Search bar-->
+        <section class="bg-dark text-white p-3">
+            <div class="container">
+                <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <lebel class="form-check-lebel">Check In Dates</lebel>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <lebel class="form-check-lebel">Check Out Dates</lebel>
+                                <input type="date" class="form-control">
+                            </div> 
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <lebel class="form-check-lebel">Adult's</lebel>
+                                <select class="form-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <lebel class="form-check-lebel">Child's</lebel>
+                                <select class="form-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group mt-3">
+                                <input type="submit" value="Search"  class="btn btn-danger form-control">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- Activiti Section -->
+        <section class="p-4" id="about">
+            <div class="container">
+                <div class="row align-items-center mt-3">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <i class="bi bi-controller text-info logo"></i>
+                                <h3 style="font-weight: bold;">Activities</h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <i class="bi bi-truck-front text-success logo"></i>
+                                <h3 style="font-weight: bold;">Travel Arrangement</h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <i class="bi bi-person-square text-warning logo"></i>
+                                <h3 style="font-weight: bold;">Private Guide</h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <i class="bi bi-geo-alt text-primary logo"></i>
+                                <h3 style="font-weight: bold;">Travel Arrangement</h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                            </div>
+                        </div>
+                    </div>     
+                    <div class="col-md-6">
+                        <h3 style="font-weight: bold;">It's time to start your advanture</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident. </p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident. </p>
+                        <button class="btn btn-danger">READ MORE DESTINATION</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tour section -->
+        <section class="p-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="images/card_bali.jpg" width="350" height="400" alt="Tour_Image" class="img-fluid tour-image">
+                    </div>
+                    <div class="col-md-6 align-items-center">
+                        <h3 style="font-size: 40px;">Make Your Tour Memorable and Safe With us</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident. </p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3 class="text-danger">200</h3>
+                                <p>Enjoy Your Tour</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 class="text-danger">5000</h3>
+                                <p>Happy Tourists</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 class="text-danger">342</h3>
+                                <p>Enjoy Your Tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6 align-items-center">
+                        <h3 style="font-size: 40px;">Make Your Tour Memorable and Safe With us</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident. </p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3 class="text-danger">761</h3>
+                                <p>Enjoy Your Tour</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 class="text-danger">3256</h3>
+                                <p>Happy Tourists</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 class="text-danger">1023</h3>
+                                <p>Enjoy Your Tour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="images/card_bankok.jpg" width="350" height="400" alt="Tour_Image" class="img-fluid tour-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- card images -->
+        <section class="p-4" id="destination">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <h2>Amazing Place Destination</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    </div>
+                </div>
+                <div class="row mt-4 card-design">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/card_singapore.jpg" width="350" height="380" class="card-img-top card-items">
+                            <div>
+                                <h3 class="card-header">Singapur</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/card_bankok.jpg" width="350" height="380" class="card-img-top card-items">
+                            <div>
+                                <h3 class="card-header">Bankok</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/card_indonasia.jpg" width="350" height="380" class="card-img-top card-items">
+                            <div>
+                                <h3 class="card-header">Indonasia</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/card_canada.jpg" width="350" height="380" class="card-img-top card-items">
+                            <div>
+                                <h3 class="card-header">Canada</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3 card-design">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/card_thialand.jpg" width="350" height="380" class="card-img-top card-items">
+                            <div>
+                                <h3 class="card-header">Thailand</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/card_paris.jpg" width="350" height="380" class="card-img-top card-items">
+                            <div>
+                                <h3 class="card-header">Paris</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/card_malasia.jpg" width="350" height="380" class="card-img-top card-items">
+                            <div>
+                                <h3 class="card-header">Malasia</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/card_bali.jpg" width="350" height="380" class="card-img-top card-items">
+                            <div>
+                                <h3 class="card-header">Bali</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Place information  -->
+        <section class="p-4" id="book">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Tours Destination</h2>
+                        <p>It has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-destination">
+                            <img src="images/card_img_1.jpg" class="card-img-top">
+                            <h5 class="price">$250/Person</h5>
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Paris</h3>
+                                <p class="card-text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</p>
+                                <div class="text-center">
+                                    <button class="btn btn-danger">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-destination">
+                            <img src="images/card_img_6.jpg" class="card-img-top">
+                            <h5 class="price">$300/Person</h5>
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Malasia</h3>
+                                <p class="card-text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</p>
+                                <div class="text-center">
+                                    <button class="btn btn-danger">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-destination">
+                            <img src="images/card_img_2.jpg" class="card-img-top">
+                            <h5 class="price">$280/Person</h5>
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Indonasia</h3>
+                                <p class="card-text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</p>
+                                <div class="text-center">
+                                    <button class="btn btn-danger">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="main-footer" id="contact">
+            <div class="footer-container">
+                <div class="row d-flex justify-content-center p-4">
+                    <div class="col-md-3">
+                        <h3>Vacations</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Information</h3>
+                        <p>Tours</p>
+                        <p>Hotels</p>
+                        <p>Destinations</p>
+                        <p>Online Booking</p>
+                        <p>Enquires</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h3>Experience</h3>
+                        <h3>Information</h3>
+                        <p>Tours</p>
+                        <p>Hotels</p>
+                        <p>Destinations</p>
+                        <p>Online Booking</p>
+                        <p>Enquires</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Address</h3>
+                        <p>Flat : 0873 , Road No: 09</p>
+                        <p>Hyderabad , Telengana</p>
+                        <p>India</p>
+                        <div class=" d-flex justify-content-around icons">
+                            <span class="bi bi-facebook text-primary"></span>
+                            <span class="bi bi-whatsapp text-success"></span>
+                            <span class="bi bi-github text-light"></span>
+                            <span class="bi bi-youtube text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

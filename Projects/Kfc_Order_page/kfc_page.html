@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Kfc Page</title>
+        <!-- CSS and JS file only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body class="container-fluid bg-danger">
+        <header>
+            <img src="imageFolder/kfc_banner_3.jpg" width="100%" height="400">
+        </header>
+        <section>
+            <div class="accordian mt-3" id="kfc">
+                <!--accordian start-->
+                <div class="accordian-item mb-2">
+                    <div class="accordian-header">
+                        <button data-bs-target="#customer" data-bs-toggle="collapse" class="btn btn-danger w-100">Customer Details</button>
+                    </div>
+                    <div class="accordian-collapse collapse" data-bs-parent="#kfc" id="customer">
+                        <div class="accordian-body">
+                            <dl>
+                                <dt>Customer Name</dt>
+                                <dd><input type="text" class="form-control" id="customerName"></dd>
+                                <dt>Mobile Number</dt>
+                                <dd><input type="text" class="form-control" id="customerMobile"></dd>
+                                <dt>Address</dt>
+                                <dd><textarea class="form-control" id="customerAddress"></textarea></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--Meal items-->
+                <div class="accordian-item">
+                    <div class="accordian-header">
+                        <button data-bs-target="#meal" data-bs-toggle="collapse" class="btn btn-danger w-100 ">Select Your Meal</button>
+                    </div>
+                    <div class="accordian-collapse collapse" id="meal" data-bs-parent="#kfc">
+                        <div class="accordian-body">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <div class="card p-2">
+                                        <img src="imageFolder/bucket_chicken.jpg" height="150" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Bucket Chicken</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="radio" id="bucketChicken" value="Bucket Chicken" name="meal" class="form-ckeck-input">
+                                            <lebel class="form-check-lebel">&#8377;340/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-2">
+                                        <img src="imageFolder/chicken_winks.jpg" height="150" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Chicken Winks</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="radio" id="chickenWink" value="Chicken Winks" name="meal" class="form-ckeck-input">
+                                            <lebel class="form-check-lebel">&#8377;250/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-2">
+                                        <img src="imageFolder/fried_chicken.webp" height="150" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Fried Chicken</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="radio" id="friedChicken" value="Fried Chicken" name="meal" class="form-ckeck-input">
+                                            <lebel class="form-check-lebel">&#8377;400/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-2">
+                                        <img src="imageFolder/chicken_sandwich.jpg" height="150" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Chicken Sandwich</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="radio" id="chickenSandwich" value="Chicken Sandwich" name="meal" class="form-ckeck-input">
+                                            <lebel class="form-check-lebel">&#8377;270/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card p-2">
+                                        <img src="imageFolder/fries-1.jpg" height="150" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Fries</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="radio" id="fries" value="Fries" name="meal" class="form-ckeck-input">
+                                            <lebel class="form-check-lebel">&#8377;150/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-2">
+                                        <img src="imageFolder/sandwich-1.jpg" height="150" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Sandwich</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="radio" id="sandwich" value="Sandwich" name="meal" class="form-ckeck-input">
+                                            <lebel class="form-check-lebel">&#8377;220/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-2">
+                                        <img src="imageFolder/chicken_2.jpg" height="150" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Chicken</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="radio" id="chicken" value="Chicken" name="meal" class="form-ckeck-input">
+                                            <lebel class="form-check-lebel">&#8377;400/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-2">
+                                        <img src="imageFolder/cake.jpg" height="150" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Cake</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="radio" id="cake" value="Cake" name="meal" class="form-ckeck-input">
+                                            <lebel class="form-check-lebel">&#8377;150/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adds on Beverage-->
+                <div class="accordian-item">
+                    <div class="accodian-header">
+                        <button data-bs-toggle="collapse" data-bs-target="#beverage" class="btn btn-danger w-100">Select Add's On</button>
+                    </div>
+                    <div class="accordian-collapse collapse" id="beverage" data-bs-parent="#kfc">
+                        <div class="accordian-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card p-2">
+                                            <img src="imageFolder/pepsi_drink.jpg" height="180" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Pepsi Cold Drinks</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="checkbox" class="form-check-input" name="beverage" id="pepsi" value="Pepsi Cold Drinks">
+                                            <lebel class="form-check-lebel">&#8377;100/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-2">
+                                            <img src="imageFolder/coffe.jpg" height="180" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Coffe</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="checkbox" class="form-check-input" name="beverage" id="coffe" value="Coffe">
+                                            <lebel class="form-check-lebel">&#8377;50/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-2">
+                                            <img src="imageFolder/ice_tea.jpeg" height="180" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Freeze Tea</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="checkbox" class="form-check-input" name="beverage" id="ftea" value="Freeze Tea">
+                                            <lebel class="form-check-lebel">&#8377;120/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card p-2">
+                                            <img src="imageFolder/beverage_soda.jpg" height="180" class="card-img-top">
+                                        <div class="card-header">
+                                            <h3>Soda</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <input type="checkbox" class="form-check-input" name="beverage" id="soda" value="Iced Soda">
+                                            <lebel class="form-check-lebel">&#8377;80/-</lebel>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="OrderClick()" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#bill">Place Order</button>
+            <div class="modal" id="bill">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Your Bill Summary</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <dl class="row">
+                                <dt class="col-4">Customer Name</dt>
+                                <dd class="col-8" id="lblName"></dd>
+                                <dt class="col-4">Mobile No</dt>
+                                <dd class="col-8" id="lblMobile"></dd>
+                                <dt class="col-4">Address</dt>
+                                <dd class="col-8" id="lblAddress"></dd>
+                                <dt class="col-4">Meal</dt>
+                                <dd class="col-8" id="lblMeal"></dd>
+                                <dt class="col-4">Add's On</dt>
+                                <dd class="col-8" id="lblAddon"></dd>
+                                <dt class="col-4">Total Amount</dt>
+                                <dd class="col-8" id="lblAmount"></dd>
+                            </dl>
+                        </div>
+                        <div class="modal-footer">
+                            <button data-bs-dismiss="modal" class="btn btn-primary">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
