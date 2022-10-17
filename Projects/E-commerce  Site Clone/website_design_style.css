@@ -1,0 +1,440 @@
+            header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 10px;
+                background-color: white;
+                box-shadow: 2px 2px 2px rgb(245, 239, 239);
+            }
+            .nav-brand {
+                font-family: arial;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color: unset;
+            }
+           a:hover{
+            text-decoration: underline 2px red;
+           }
+            /* Collections woman, man,kids section*/
+            ul{
+                list-style: none;
+                display: flex;
+            }
+            li{
+                font-family: arial;
+                margin-right: 20px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .nav-toolbar span{
+                font-family: arial;
+                margin-right: 15px;
+            }
+            .site-title{
+                background-color: black;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                font-family: arial;
+                letter-spacing: 3px;
+            }
+            .site-banner{
+                display: flex;
+                margin-top: 10px;
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 2px rgb(51, 48, 48);
+                font-family: Arial;
+            }
+            .site-card1{
+                background-image: url("asset/women.webp");
+                width: 500px;
+                height: 400px;
+                opacity: 0.7;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 20px;
+                
+            }
+            .site-card2{
+                background-image: url("asset/man.jpg");
+                width: 500px;
+                height: 400px;
+                opacity: 0.7;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 20px;
+                
+            }
+            .site-card3{
+                background-image: url("asset/kids.jpg");
+                width: 500px;
+                height: 400px;
+                opacity: 0.7;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 20px;   
+            }
+            .site-card1:hover ,.site-card2:hover ,.site-card3:hover{
+                opacity: 1;
+                transition: 1.5s;
+            }
+            button{
+                height: 50px;
+                padding: 10px;
+                background-color: white;
+                font-size: 20px;
+                border: none;
+                border-radius: 15px;
+            }
+            .shipping{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                font-family: Arial;
+                font-size: 10px;
+                padding: 10px;
+                margin-left: 80px;
+                margin-right: 40px;
+                margin-bottom: 30px;
+            }
+            .shipping>div{
+                margin-left: 80px;
+                margin-right: 60px;
+            }
+            .inner-text{
+                margin-left: 15px;
+                font-size: 14px;
+                color: rgb(78, 73, 73);
+            }
+            .shipping .icon{
+                font-size: 20px;
+            }
+            /* main section*/
+            .main{
+                text-align: center;
+                padding: 50px;
+                font-size: Arial;
+                margin-left: 150px;
+                margin-right: 150px;
+                font-family: Arial;
+            }
+            .row-1, .row-2{
+                display: flex;
+            }.row-1{
+                margin-bottom: 30px;
+            }
+            .mid-text{
+                text-align: center;
+                margin-left: 250px;
+                font-size: 17px;
+                color: rgb(78, 71, 71);
+                margin-right: 250px;
+                margin-bottom: 50px;
+                line-height: 30px;
+            }
+            .main-text >h1{
+                font-size: 35px;
+                color: black;
+            }
+             .row-1 .col1{
+                background-image: url("asset/womanBags.jpg");
+                width: 400px;
+                height: 500px;
+                display: flex;
+                color: white;
+                text-shadow: 2px 2px 2px black;
+                transition: 1s;
+                flex-direction: column;
+                margin-right: 30px;
+                justify-content: center;
+                align-items: center;
+            }
+            .col1:hover, .col2:hover, #rightarrow:hover{
+                transform: translate(5px);
+                transition: 2s;
+                opacity: 0.8;
+            }
+            .row-1 .col2{
+                background-image: url("asset/printedManTshirt.webp");
+                width: 700px;
+                height: 500px;
+                background-size: cover;
+                display: flex;
+                flex-wrap: wrap;
+                color: white;
+                text-shadow: 2px 2px 2px black;
+                transition: 1s;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+           .row-2 .col1{
+                background-image: url("asset/womanDress.webp");
+                width: 800px;
+                height: 500px;
+                background-size: cover;
+                display: flex;
+                flex-wrap: wrap;
+                color: white;
+                text-shadow: 2px 2px 2px black;
+                transition: 1s;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 50px;
+            }
+            .row-2 .col2{
+                background-image: url("asset/sweartshirt.webp");
+                width: 500px;
+                height: 500px;
+                display: flex;
+                color: white;
+                text-shadow: 2px 2px 2px black;
+                transition: 1s;
+                flex-direction: column;
+                margin-right: 30px;
+                justify-content: center;
+                align-items: center;
+            }
+            /* categories part*/
+            .section{
+                text-align: center;
+                font-family: Arial;
+                margin-bottom: 50px;
+            }
+            .section span{
+                margin-right: 20px;
+               
+            }
+            .section span:hover{
+                text-decoration: underline;
+                color: red;
+            }
+            .img-section{
+                display: flex;
+                margin-left: 160px;
+                color: gray;
+                margin-right: 160px;
+                flex-direction: column;
+                justify-content: center;
+                text-align: justify;
+                margin-bottom: 50px;
+            } 
+            .img-section h4{
+                color: rgb(73, 59, 59);
+                margin:10px auto;
+            }
+            .row-1 img ,.row-2 img{
+                width: 250px;
+                height: 300px;
+                margin-bottom: 15px;
+               
+            }     
+            .img-section .col-1{  
+                width: 300px;
+                margin-right: 20px; 
+            }
+            .img-section .col-2{
+                width: 300px;
+                margin-right: 20px;
+                
+            }
+            .img-section .col-3{
+                width: 300px;
+                margin-right: 20px;
+            }
+            
+            .img-section .col-4{
+                width: 250px;
+            }
+            .img-section .col-1:hover ,
+            .img-section .col-2:hover,
+            .img-section .col-3:hover ,
+            .img-section .col-4:hover {
+                transform: scale(0.9);
+                transition: 2s;
+                opacity: 0.8;
+            }
+
+            .banner-img{
+                width: 100%;
+                height: 450px;
+                background-color: rgba(220, 203, 205, 0.803);
+                display: flex;
+                justify-content: right;
+                flex-direction: column;
+                align-items: center; 
+                margin-bottom: 80px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .banner-img >div{
+                margin-top: 50px;
+                margin-left: 800px;
+                margin-right: 200px;
+            }
+            .reviews{
+                text-align: center;
+                margin-bottom: 70px;
+            }
+            .reviews .review-header{
+                margin-bottom: 70px;
+            }
+            .review-comment{
+                display: flex;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            .card-1{
+                width: 300px;
+                height: 350px;
+                padding: 20px;
+                margin-right: 20px;
+                transition: 2s;
+                border: 1px solid gray;
+                box-shadow: 0px 0px 2px gray;
+            }
+            .card-1 img{
+                float: left;  
+                margin-right: 10px;  
+            }
+            .rating{
+                text-align: justify;
+                line-height: 35px;
+            }
+            .rating h5{
+                margin: 0;
+            }
+            .card-1 .comment p{
+                 text-align: justify;
+                 line-height: 20px;
+            }
+            .card-1:hover{
+                transform: scale(0.9,1);
+                transition: 2s;
+                background-color: rgb(238, 226, 226);
+            }
+            .counter{
+                text-align: justify;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 200px;
+                margin-top:30px;
+                margin-bottom: 30px;
+            }
+            .counter>div{
+               
+                margin-right: 30px;
+                font-size: 40px;
+                color: rgba(246, 40, 40, 0.963);
+            }
+           .counter span{
+               text-align: center;
+               margin-left: 30px;
+           }
+           .banner-img button{
+               background-color: black;
+               color: white;
+               padding: 10px;
+               transition: 1s;
+           }
+           .shop-now button:hover{
+               transform:translate(10px);
+               transition: 2s;
+           }
+           .fashion{
+               text-align: center;
+               padding-top: 40px;
+               background-color: rgb(228, 223, 223);
+               padding-bottom: 50px;
+           }
+           .col-1 p{
+               font-size: 20px;
+               color: rgb(141, 132, 132);
+           }
+           .fashion>div{
+               margin-bottom: 50px;
+           }
+           .fashion .col-2{
+               display: flex;
+               margin-left: 120px;
+               margin-bottom: 50px;
+           }
+           .col-2 img{
+               margin-right: 15px;
+           }
+           .fashion img:hover{
+            opacity: 0.6;
+            transition: 2s;
+           }
+            .fashion .col-3 span{
+               font-size: 40px;
+               margin-right: 40px;
+               transition: 1.5s;
+               color: gray; 
+           }.fashion .col-3 span:hover{
+               color: black;
+               font-size: 43px;
+               transition: 2s;
+           }
+           #star{
+             color: rgb(251, 205, 0);
+           }
+           .footer{
+               font-family: Arial;
+               padding: 20px;
+               text-align: center;
+               background-color: rgb(75, 52, 52);
+               color: white;
+           }
+           .footer input{
+            padding: 20px;
+            width: 250px;
+            color: rgb(223, 222, 209);
+            background-color: rgb(53, 33, 33);
+            margin-right: 15px;
+            border: none;
+           }
+           .footer button{
+               background-color:rgb(102, 96, 96);
+               width: 130px;
+               height: 55px;
+               font-size: 15px;
+               margin-top: 10px;
+               padding: 20px;
+               color: white;
+               border: none;
+               border-radius: 0;
+           }
+           .footer button:hover{
+               background-color: gainsboro;
+               color: black;
+               font-size: 17px;
+           }
+           .details{
+               text-align: justify;
+               display: flex;
+               justify-content: center;
+           }
+           .main-footer{
+               margin-bottom: 50px;
+           }
+           .about{
+               margin-right: 100px;
+           }
+           .about span{
+               margin-right: 10px;
+           }
+           .about p{
+               color: rgb(209, 200, 200);
+               font-size: 15px;
+           }
+           
